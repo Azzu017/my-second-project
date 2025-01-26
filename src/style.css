@@ -212,6 +212,10 @@ main{
     border-radius: 25px;
     margin-right: 10px;
 }
+.tag-1:hover, .tag-2:hover, .tag-3:hover{
+cursor: pointer;
+font-size: 1.25rem;
+}
 .blog-post-body {
     padding: 2px;
     
