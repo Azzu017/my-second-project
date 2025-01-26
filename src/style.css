@@ -37,6 +37,7 @@ main{
 @media screen and (max-width: 768px) {
     .logo {
         font-size: 1.2rem;
+        justify-content: center;
     }
     
 }
@@ -97,8 +98,13 @@ main{
     padding: 10px;
     font-size: 2rem;
     text-align: start;
-    padding: 10px;
 }
+
+.post-1{
+    display: grid;
+   
+}
+
 @media screen and (max-width: 768px) {
     .post-cart {
         font-size: 1.5rem;
@@ -122,17 +128,18 @@ main{
 
 }
 .post-2 img, .post-3 img{
+    object-fit: cover;
     width: 90%;
     border-radius: 10px;
 }
 @media screen and (max-width: 768px) {
     .post-img img {
-        width: 326px;
-        height: 240px;
+        width: 100%;
+        height: auto;
     }
     .post-3 img, .post-2 img{
-        width: 326px;
-        height: 240px;
+        width: 100%;
+        height: auto;
     }
     
 }
@@ -152,7 +159,6 @@ main{
     
 }
 .blog-title {
-    font-size: 1.15rem;
     padding: 10px;
     font-size: 1.5rem;
 }
@@ -206,7 +212,35 @@ main{
     border-radius: 25px;
     margin-right: 10px;
 }
+.blog-post-body {
+    padding: 2px;
+    
+}
+.blog-post-body:hover {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
 
+.all-blog-body{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.all-blog-body img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+    .all-blog-body {
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+}
 /* footer */
 .footer {
     display: flex;
@@ -237,7 +271,6 @@ main{
     margin-top: 5px;
     font-size: 0.95rem;
 }
-
 @media screen and (max-width: 768px) {
     .footer {
         flex-direction: column;
