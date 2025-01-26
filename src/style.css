@@ -5,6 +5,19 @@
     font-family: "Inter", sans-serif;
 }
 
+:root {
+    --author-font-color: #6941C6;
+    --tag-1-color: #6941C6;
+    --tag-1-bg-color: #F9F5FF;
+    --tag-2-color: #3538CD;
+    --tag-2-bg-color: #EEF4FF;
+    --tag-3-color: #C11574;
+    --tag-3-bg-color: #FDF2FA;
+    --blog-subtitle-color: #667085;
+
+}
+
+/* header itmes */
 .header {
     display: flex;
     justify-content: space-between;
@@ -37,15 +50,6 @@
     background-color: #f1f1f1;
 }
 
-.nav-list a.active {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.nav-list a.active:hover {
-    background-color: #007bff;
-}
-
 .hero {
     display: flex;
     justify-content: center;
@@ -56,4 +60,101 @@
     border: 1px solid rgb(123, 118, 118);
     text-transform: uppercase;
 
+}
+
+/* recent post */
+.post-cart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: start;
+    padding: 10px;
+}
+
+.post-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.post-img img {
+    object-fit: cover;
+    align-items: center;
+    width: 90%;
+    height: 400px;
+
+}
+
+.blog-author-name {
+    color: var(--author-font-color);
+    font-weight: 600;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.blog-title {
+    font-size: 1.25rem;
+    padding: 10px;
+}
+
+.blog-subtitle {
+    color: var(--blog-subtitle-color);
+    padding: 10px;
+    padding-top: 0;
+}
+
+.blog-tags {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+.tag-1{
+    color: var(--tag-1-color);
+    background-color: var(--tag-1-bg-color);
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+.tag-2{
+    color: var(--tag-2-color);
+    background-color: var(--tag-2-bg-color);
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+.tag-3{
+    color: var(--tag-3-color);
+    background-color: var(--tag-3-bg-color);
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #1A1A1A;
+    padding: 5px;
+}
+.footer a:hover {
+    color: #7c5ec2;
+}
+.footer p {
+    font-size: 0.85rem;
+    padding: 3px;
+}
+.footer-links{
+    padding: 5px;
 }
